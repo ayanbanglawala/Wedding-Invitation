@@ -6,7 +6,7 @@ import './topbar.css'
 // site root, so no import is needed.
 const MUSIC_SRC = '/wedding.mp3'
 export default function TopBar() {
-  const [playing, setPlaying] = useState(false)
+  const [playing, setPlaying] = useState(true)
   const audioRef = useRef(null)
 
   function toggle() {
