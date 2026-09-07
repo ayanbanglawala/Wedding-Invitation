@@ -1,10 +1,8 @@
 import { useRef, useState } from 'react'
 import './topbar.css'
 
-// Put your audio file in the `public` folder (e.g. public/music.mp3) and
-// point this at it with a leading slash — Vite serves public/ from the
-// site root, so no import is needed.
 const MUSIC_SRC = '/wedding.mp3'
+
 export default function TopBar() {
   const [playing, setPlaying] = useState(true)
   const audioRef = useRef(null)
@@ -12,23 +10,29 @@ export default function TopBar() {
   function toggle() {
     const audio = audioRef.current
     if (!audio) return
-    if (playing) {
-      audio.pause()
+
+    if (audio.paused) {
+      audio.play()
+      setPlaying(true)
     } else {
-      audio.play().catch(() => {
-        // Autoplay/interaction restrictions can reject this in some
-        // browsers — the button just stays in its current state.
-      })
+      audio.pause()
+      setPlaying(false)
     }
-    setPlaying((p) => !p)
   }
 
   return (
     <div className="topbar">
-      <audio ref={audioRef} src={MUSIC_SRC} loop preload="none" />
+      <audio
+        ref={audioRef}
+        src={MUSIC_SRC}
+        loop
+        autoPlay
+        preload="auto"
+      />
+
       <button
         className="mute-btn"
-        aria-label="Toggle music"
+        aria-label={playing ? 'Pause music' : 'Play music'}
         onClick={toggle}
       >
         {playing ? '❚❚' : '♪'}
