@@ -28,10 +28,11 @@ const weddingData = {
   ],
 
   timeline: [
-    { time: '6:30 PM', title: 'Guest Arrival' },
-    { time: '07:00 PM', title: 'Nikah Ceremony', note: 'Solemnisation & duas' },
-    { time: '07:30 PM', title: 'Blessings', note: 'Family greetings & photographs' },
-    { time: '09:00 PM', title: 'Dinner', note: 'A feast shared with love' },
+    { time: '3 November 04:00 PM', title: 'Mehendi' },
+    { time: '5 November 09:00 PM', title: 'Dinner from Bride\'s side' },
+    { time: '5 November 11:00 PM', title: 'Rukhsati', note: 'Solemnisation & duas' },
+    { time: '6 November 09:00 PM', title: 'Walima', note: 'Celebration of love' },
+    // { time: '09:00 PM', title: 'Dinner', note: 'A feast shared with love' },
   ],
 
   venue: {
@@ -46,7 +47,7 @@ const weddingData = {
   },
 
   festivities: [
-    { name: 'Mehendi', when: 'November 3 · 4:00 PM', where: "Groom's Residence", mapQuery: "Groom's Residence" },
+    { name: 'Mehendi', when: 'November 3 · 4:00 PM', where: "Groom's Residence", mapQuery: "https://maps.app.goo.gl/JZMdTSmKZLX89xfBA" },
     { name: 'Rukhsati day', when: 'November 5 · 9:00 PM', where: "Zaveri Hall, Paldi", mapQuery: "https://maps.app.goo.gl/zAxevfwRVpk9EaM78" },
     { name: 'Walima', when: 'Noverember 6 · 9:00 PM', where: 'Zaveri Hall, Paldi', mapQuery: 'https://maps.app.goo.gl/zAxevfwRVpk9EaM78' },
   ],
