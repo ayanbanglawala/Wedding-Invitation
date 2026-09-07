@@ -56,6 +56,7 @@ const weddingData = {
     { year: 'November, 2023', title: 'Families meet', copy: 'Two families sat down over juice and found they already agreed on everything that mattered.' },
     { year: 'November, 2023', title: 'The proposal', copy: 'Under the same string lights from that first evening, Ayan asked, and Arna already knew her answer.' },
     { year: 'February, 2025', title: 'Qubool Hai', copy: 'And now, with your prayers, we begin our forever.' },
+    { year: 'November, 2026', title: 'Walima', copy: 'A new chapter begins in the life of Arna & Ayan.' },
   ],
 
   rsvp: {
