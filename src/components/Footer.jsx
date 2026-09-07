@@ -10,7 +10,7 @@ export default function Footer() {
       <Reveal as="h2" delay={0.06} className="script footer-heading">{heading}</Reveal>
       <Reveal as="p" delay={0.12} className="footer-copy">{copy}</Reveal>
       <Reveal as="p" delay={0.18} className="script footer-names">
-        {weddingData.couple.brideFirst} &amp; {weddingData.couple.groomFirst}
+        {weddingData.couple.groomFirst} &amp; {weddingData.couple.brideFirst}
       </Reveal>
     </footer>
   )

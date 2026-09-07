@@ -110,7 +110,7 @@ export default function CurtainLock({ onOpen }) {
       <div ref={contentRef} className="curtain-content">
         <p className="curtain-label">The wedding of</p>
         <h1 className="script curtain-heading">
-          {weddingData.couple.brideFirst} &amp; {weddingData.couple.groomFirst}
+          {weddingData.couple.groomFirst} &amp; {weddingData.couple.brideFirst}
         </h1>
         <button className="curtain-enter" onClick={handleOpen} aria-label="Open the invitation">
           <span className="curtain-ring" />

@@ -112,15 +112,18 @@ export default function Hero({ playIntro }) {
           We request the honour of your<br />presence at the Rukhsati and Walima day of
         </p>
 
-        <h2 className="hero-name"><KineticWord text={weddingData.couple.brideFull} /></h2>
-        <p className="hero-rel hero-fade">Daughter of</p>
-        <p className="hero-parents hero-fade">{weddingData.couple.brideParents}</p>
-
-        <p className="hero-amp script hero-fade">&amp;</p>
+        
 
         <h2 className="hero-name"><KineticWord text={weddingData.couple.groomFull} /></h2>
         <p className="hero-rel hero-fade">Son of</p>
-        <p className="hero-parents hero-fade">{weddingData.couple.groomParents}</p>
+          <p className="hero-parents hero-fade">{weddingData.couple.groomParents}</p>
+
+        <p className="hero-amp script hero-fade">&amp;</p>
+
+          <h2 className="hero-name"><KineticWord text={weddingData.couple.brideFull} /></h2>
+        <p className="hero-rel hero-fade">Daughter of</p>
+        <p className="hero-parents hero-fade">{weddingData.couple.brideParents}</p>
+
 
         <p className="hero-tagline hero-fade">As they begin their forever in faith and love.</p>
       </div>

@@ -14,7 +14,7 @@ export default function BlessedBeginning() {
         {copy}
       </Reveal>
       <Reveal as="p" delay={0.16} className="script" style={{ color: 'var(--red-500)', fontSize: 30 }}>
-        {weddingData.couple.brideFirst} &amp; {weddingData.couple.groomFirst}
+        {weddingData.couple.groomFirst} &amp; {weddingData.couple.brideFirst}
       </Reveal>
     </section>
   )
