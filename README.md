@@ -1,4 +1,4 @@
-# Velvet — Aiza & Hamza's Nikah Invitation (React)
+# Velvet — Ayan & Arna's Invitation (React)
 
 A React + Vite rebuild of the single-file invitation, split into components
 with real GSAP-driven animation (curtain intro, kinetic-type hero reveal,

@@ -28,7 +28,7 @@ export default function Timeline() {
     <section id="nikah-day" style={{ background: 'var(--cream-50)' }}>
       <Reveal as="p" className="eyebrow">The celebration</Reveal>
       <Reveal as="h2" delay={0.06} className="script" style={{ textAlign: 'center', fontSize: 32, color: 'var(--maroon-800)', marginBottom: 34 }}>
-        Our Nikah day
+        Our Rukhsati and Walima day
       </Reveal>
       <div ref={wrapRef} className="tl-wrap">
         <svg className="tl-svg" viewBox="0 0 20 400" preserveAspectRatio="none">

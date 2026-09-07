@@ -109,7 +109,7 @@ export default function Hero({ playIntro }) {
         <p className="hero-arabic hero-fade">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
         <Divider tone="dark" />
         <p className="hero-req hero-fade">
-          We request the honour of your<br />presence at the Nikah of
+          We request the honour of your<br />presence at the Rukhsati and Walima day of
         </p>
 
         <h2 className="hero-name"><KineticWord text={weddingData.couple.brideFull} /></h2>
