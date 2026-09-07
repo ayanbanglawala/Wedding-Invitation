@@ -1,0 +1,79 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 88px 32px;
+}
+.hero-bg {
+  position: absolute;
+  inset: -10% 0;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 20%, #6e1420 0%, #3a0a12 45%, #170304 100%);
+}
+.hero-bg svg { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.5; }
+.hero-dust { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; }
+.hero-content { position: relative; z-index: 2; max-width: 420px; }
+
+.hero-arabic { color: var(--gold-300); font-size: 19px; margin-bottom: 6px; }
+.hero-req {
+  font-family: var(--font-label);
+  color: #f3e2c4;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  max-width: 280px;
+  margin: 0 auto 26px;
+  line-height: 1.8;
+}
+.hero-name {
+  color: #fbeedd;
+  font-family: var(--font-script);
+  font-size: 52px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.kinetic-letter { will-change: transform, opacity, filter; }
+.hero-rel {
+  color: #d8b98c;
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+.hero-parents { color: #f3e2c4; font-style: italic; font-size: 15px; margin-bottom: 24px; }
+.hero-amp { color: var(--gold-400); font-size: 36px; margin-bottom: 20px; }
+.hero-tagline {
+  color: var(--gold-300);
+  font-family: var(--font-label);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  max-width: 230px;
+  margin: 28px auto 0;
+}
+
+.hero-scrollcue {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--gold-300);
+  z-index: 2;
+}
+.hero-scrolltxt { font-family: var(--font-label); font-size: 10px; letter-spacing: 0.32em; margin-bottom: 8px; text-transform: uppercase; }
+.hero-scrollbar {
+  width: 1px;
+  height: 22px;
+  background: rgba(230, 201, 136, 0.6);
+  animation: hero-scroll-pulse 1.8s ease-in-out infinite;
+}
+@keyframes hero-scroll-pulse {
+  0%, 100% { transform: scaleY(1); opacity: 0.6; }
+  50% { transform: scaleY(1.3); opacity: 1; }
+}

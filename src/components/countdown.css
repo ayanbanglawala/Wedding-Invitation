@@ -1,0 +1,23 @@
+.cd-section {
+  background: linear-gradient(180deg, var(--maroon-800), var(--maroon-900));
+  text-align: center;
+}
+.cd-label {
+  font-family: var(--font-label);
+  color: var(--gold-400);
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.cd-heading { color: #fbeedd; font-size: 30px; margin-bottom: 34px; }
+.cd-units { display: flex; justify-content: center; gap: 26px; }
+.cd-unit { display: flex; flex-direction: column; align-items: center; }
+.cd-val {
+  color: #fbeedd;
+  font-size: 38px;
+  display: block;
+  font-variant-numeric: tabular-nums;
+  font-family: var(--font-label);
+}
+.cd-name { color: #d8b98c; font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; margin-top: 4px; }

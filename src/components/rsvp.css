@@ -1,0 +1,100 @@
+.rsvp-section {
+  background: linear-gradient(180deg, var(--maroon-900), var(--maroon-800));
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.rsvp-heading { color: #fbeedd; font-size: 32px; margin-bottom: 10px; }
+.rsvp-copy { color: var(--gold-300); font-size: 14.5px; max-width: 320px; margin: 0 auto; line-height: 1.7; }
+.rsvp-deadline {
+  font-family: var(--font-label);
+  color: var(--gold-400);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.rsvp-frame {
+  max-width: 380px;
+  margin: 34px auto 0;
+  background: rgba(250, 246, 238, 0.04);
+  border: 1px solid rgba(207, 159, 82, 0.28);
+  border-radius: 4px;
+  backdrop-filter: blur(6px);
+}
+
+.rsvp-form { display: flex; flex-direction: column; gap: 18px; text-align: left; }
+.rsvp-form label { display: flex; flex-direction: column; gap: 6px; }
+.rsvp-form label span {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-300);
+}
+.rsvp-form input,
+.rsvp-form textarea {
+  background: rgba(250, 246, 238, 0.06);
+  border: 1px solid rgba(207, 159, 82, 0.35);
+  border-radius: 4px;
+  padding: 11px 12px;
+  color: #fbeedd;
+  font-family: var(--font-body);
+  font-size: 15px;
+  resize: none;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+.rsvp-form input:focus,
+.rsvp-form textarea:focus {
+  outline: none;
+  border-color: var(--gold-400);
+  background: rgba(250, 246, 238, 0.1);
+}
+
+.rsvp-attend { border: none; padding: 0; margin: 0; }
+.rsvp-attend legend {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold-300);
+  margin-bottom: 8px;
+  padding: 0;
+}
+.rsvp-toggle { display: flex; gap: 10px; flex-wrap: wrap; }
+.rsvp-toggle button {
+  flex: 1 1 auto;
+  padding: 10px 14px;
+  border: 1px solid rgba(207, 159, 82, 0.4);
+  background: transparent;
+  color: var(--gold-300);
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+.rsvp-toggle button.active { background: var(--gold-400); color: var(--maroon-950); border-color: var(--gold-400); }
+
+.rsvp-submit {
+  margin-top: 4px;
+  align-self: center;
+  padding: 13px 34px;
+  border: 1px solid var(--gold-400);
+  background: transparent;
+  color: var(--gold-300);
+  font-family: var(--font-label);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+.rsvp-submit:hover { background: var(--gold-400); color: var(--maroon-950); }
+
+.rsvp-thanks { padding: 20px 8px; text-align: center; }
+.rsvp-thanks-title { font-size: 40px; color: var(--gold-300); margin-bottom: 10px; }
+.rsvp-thanks p { color: #f3e2c4; font-size: 15px; line-height: 1.7; }

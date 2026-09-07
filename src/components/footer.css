@@ -1,0 +1,9 @@
+.site-footer {
+  background: linear-gradient(180deg, var(--maroon-900), var(--maroon-950));
+  text-align: center;
+  padding: 100px 32px;
+}
+.footer-label { font-family: var(--font-label); color: var(--gold-400); font-size: 11px; letter-spacing: 0.3em; margin-bottom: 8px; text-transform: uppercase; }
+.footer-heading { color: #fbeedd; font-size: 30px; margin-bottom: 14px; }
+.footer-copy { color: var(--gold-300); font-size: 14px; max-width: 280px; margin: 0 auto 36px; }
+.footer-names { color: #8a7160; font-size: 26px; }
